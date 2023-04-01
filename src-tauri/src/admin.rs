@@ -1,3 +1,6 @@
+use std::process::exit;
+use std::process::Command;
+
 #[cfg(windows)]
 pub fn reopen_as_admin() {
   let install = std::env::current_exe().unwrap();
