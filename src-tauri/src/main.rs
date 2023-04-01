@@ -60,7 +60,7 @@ fn main() {
 
   // Setup datadir/cultivation just in case something went funky and it wasn't made
   if !dir_exists(data_dir().unwrap().join("cultivation").to_str().unwrap()) {
-    fs::create_dir_all(&data_dir().unwrap().join("cultivation")).unwrap();
+    fs::create_dir_all(data_dir().unwrap().join("cultivation")).unwrap();
   }
 
   // Always set CWD to the location of the executable.
@@ -89,6 +89,9 @@ fn main() {
         system_helpers::run_command,
         system_helpers::run_program,
         system_helpers::run_program_relative,
+        system_helpers::start_service,
+        system_helpers::service_status,
+        system_helpers::stop_service,
         system_helpers::run_jar,
         system_helpers::open_in_browser,
         system_helpers::install_location,
