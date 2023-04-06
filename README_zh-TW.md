@@ -12,19 +12,20 @@
 請不要**安裝、下載或使用在其他地方找到的預編譯版本的 Cultivation**。 僅使用此 GitHub 存儲庫中的版本。
 
 ### Thorny 版更改：
- 
-  - 修復了 3dmigoto 路徑被破壞的問題
-  - 修正了“卡在提取”問題
-  - 更好的默認設置
-  - 用多合一下載替換無用的穩定下載
-  - 加密按鈕實際上適用於編輯的配置
-  - 最近的提交框立即顯示而不需要點擊
-  - 各種生活質量改善
-  - 多虧了 [@koreako12](https://github.com/koreako12) 添加了韓語翻譯
-  - 一些其他翻譯補充（機器翻譯，如果有問題請告訴我）
- 
-  由於沒有問題頁面，這個版本的問題可以在 discord 上直接找我：Thoronium#7770
-   - 您需要先加入 [Grasscutters discord](https://discord.gg/grasscutter)，然後才能發送消息請求 :) 或者您可以在#support 中 ping 我
+
+- 修復了 3dmigoto 路徑被破壞的問題
+- 修正了“卡在提取”問題
+- 更好的默認設置
+- 用多合一下載替換無用的穩定下載
+- 加密按鈕實際上適用於編輯的配置
+- 最近的提交框立即顯示而不需要點擊
+- 各種生活質量改善
+- 多虧了 [@koreako12](https://github.com/koreako12) 添加了韓語翻譯
+- 一些其他翻譯補充（機器翻譯，如果有問題請告訴我）
+
+由於沒有問題頁面，這個版本的問題可以在 discord 上直接找我：Thoronium#7770
+
+- 您需要先加入 [Grasscutters discord](https://discord.gg/grasscutter)，然後才能發送消息請求 :) 或者您可以在#support 中 ping 我
 
 # 目錄
 
