@@ -194,7 +194,6 @@ export default class Options extends React.Component<IProps, IState> {
     this.setState({
       migoto_path: value,
     })
-
   }
 
   setReshade(value: string) {
