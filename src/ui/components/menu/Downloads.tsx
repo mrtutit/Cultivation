@@ -300,7 +300,7 @@ export default class Downloads extends React.Component<IProps, IState> {
         <div className="HeaderText" id="downloadMenuIndividualHeader">
           <Tr text="downloads.individual_header" />
         </div>
-        <div className="DownloadMenuSection" id="downloadMenuContainerGCUnstable">
+        {/* <div className="DownloadMenuSection" id="downloadMenuContainerGCUnstable">
           <div className="DownloadLabel" id="downloadMenuLabelGCUnstable">
             <Tr
               text={
@@ -318,7 +318,7 @@ export default class Downloads extends React.Component<IProps, IState> {
               <Tr text="components.download" />
             </BigButton>
           </div>
-        </div>
+        </div> */}
         <div className="DownloadMenuSection" id="downloadMenuContainerGCDev">
           <div className="DownloadLabel" id="downloadMenuLabelGCDev">
             <Tr
