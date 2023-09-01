@@ -78,6 +78,7 @@ impl HttpHandler for ProxyHandler {
         if uri.contains("hoyoverse.com")
           || uri.contains("mihoyo.com")
           || uri.contains("yuanshen.com")
+          || uri.ends_with(".yuanshen.com:12401")
           || uri.contains("starrails.com")
           || uri.contains("bhsr.com")
           || uri.contains("bh3.com")
