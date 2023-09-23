@@ -34,7 +34,8 @@
     "un_elevated": "Jalankan game yang tidak ditinggikan (tanpa admin)",
     "redirect_more": "Juga mengarahkan ulang game MHY lainnya",
     "web_cache": "Hapus folder webCaches",
-    "launch_args": "Launch Args"
+    "launch_args": "Luncurkan Args",
+    "offline_mode": "Mode Offline"
   },
   "downloads": {
     "grasscutter_fullbuild": "Sedang Mendownload Grasscutter Semua Dalam Satu",

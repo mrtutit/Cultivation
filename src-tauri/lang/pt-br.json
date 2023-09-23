@@ -35,7 +35,8 @@
     "un_elevated": "Executar o jogo não-elevated (sem admin)",
     "redirect_more": "Também redirecionar outros jogos MHY",
     "web_cache": "Excluir pasta webCaches",
-    "launch_args": "Launch Args"
+    "launch_args": "Argumentos de lançamento",
+    "offline_mode": "Modo offline"
   },
   "downloads": {
     "grasscutter_fullbuild": "Baixar o Grasscutter Tudo-em-Um",

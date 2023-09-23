@@ -34,7 +34,8 @@
     "un_elevated": "Voer het spel uit zonder hoogtevrees (geen admin)",
     "redirect_more": "Richt ook andere MHY-spellen",
     "web_cache": "Verwijder de webCaches-map",
-    "launch_args": "Launch Args"
+    "launch_args": "Args starten",
+    "offline_mode": "Offline Modus"
   },
   "downloads": {
     "grasscutter_fullbuild": "Grasscutter Alles-in-één Downloaden",

@@ -33,7 +33,8 @@
     "un_elevated": "Palaist spēli bez paaugstinājuma (bez administratora)",
     "redirect_more": "Arī novirzīt citas MHY spēles",
     "web_cache": "Dzēsiet mapi WebCaches",
-    "launch_args": "Launch Args"
+    "launch_args": "Palaišanas args",
+    "offline_mode": "Bezsaistes režīms"
   },
   "downloads": {
     "grasscutter_fullbuild": "Lejupielādējiet Grasscutter viss vienā",

@@ -29,6 +29,7 @@ let defaultConfig: Configuration
     un_elevated: false,
     redirect_more: false,
     launch_args: '',
+    offline_mode: false,
 
     // Linux stuff
     grasscutter_elevation: 'None',
@@ -64,6 +65,7 @@ export interface Configuration {
   un_elevated: boolean
   redirect_more: boolean
   launch_args: string
+  offline_mode: boolean
 
   // Linux stuff
   grasscutter_elevation: string

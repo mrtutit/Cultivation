@@ -52,6 +52,7 @@ interface IState {
   un_elevated: boolean
   redirect_more: boolean
   launch_args: string
+  offline_mode: boolean
 
   // Linux stuff
   grasscutter_elevation: string
@@ -88,6 +89,7 @@ export default class Options extends React.Component<IProps, IState> {
       un_elevated: false,
       redirect_more: false,
       launch_args: '',
+      offline_mode: false,
 
       // Linux stuff
       grasscutter_elevation: GrasscutterElevation.None,
@@ -147,6 +149,7 @@ export default class Options extends React.Component<IProps, IState> {
       un_elevated: config.un_elevated || false,
       redirect_more: config.redirect_more || false,
       launch_args: config.launch_args,
+      offline_mode: config.offline_mode || false,
 
       // Linux stuff
       grasscutter_elevation: config.grasscutter_elevation || GrasscutterElevation.None,
@@ -596,6 +599,18 @@ export default class Options extends React.Component<IProps, IState> {
             </div>
           </div>
         ) : null}
+        <div className="OptionSection" id="menuOptionsContainerOffline">
+          <div className="OptionLabel" id="menuOptionsLabelOffline">
+            <Tr text="options.offline_mode" />
+          </div>
+          <div className="OptionValue" id="menuOptionsCheckboxOffline">
+            <Checkbox
+              onChange={() => this.toggleOption('offline_mode')}
+              checked={this.state?.offline_mode}
+              id="offlineMode"
+            />
+          </div>
+        </div>
 
         <Divider />
 

@@ -35,7 +35,8 @@
     "un_elevated": "非提升运行游戏（无管理员）",
     "redirect_more": "还可以重定向其他MHY游戏",
     "web_cache": "删除 webCaches 文件夹",
-    "launch_args": "Launch Args"
+    "launch_args": "启动参数",
+    "offline_mode": "离线模式"
   },
   "downloads": {
     "grasscutter_fullbuild": "下载 Grasscutter 一体化",

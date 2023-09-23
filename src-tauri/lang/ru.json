@@ -34,7 +34,8 @@
     "un_elevated": "Запустите игру в неэлегантном режиме (без администратора)",
     "redirect_more": "Также перенаправьте другие игры MHY",
     "web_cache": "Удалить папку webCaches",
-    "launch_args": "Launch Args"
+    "launch_args": "Параметры запуска",
+    "offline_mode": "Автономный режим"
   },
   "downloads": {
     "grasscutter_fullbuild": "Скачать все в одном Grasscutter",

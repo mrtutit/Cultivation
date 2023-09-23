@@ -2,6 +2,7 @@
 import { invoke } from '@tauri-apps/api/tauri'
 import React from 'react'
 import Tr from '../../../utils/language'
+import { getConfig, getConfigOption } from '../../../utils/configuration'
 
 import './NewsSection.css'
 
@@ -10,6 +11,7 @@ interface IProps {
 }
 
 interface IState {
+  offline: boolean
   selected: string
   news?: JSX.Element
   commitList?: JSX.Element[]
@@ -40,6 +42,7 @@ export default class NewsSection extends React.Component<IProps, IState> {
     super(props)
 
     this.state = {
+      offline: false,
       selected: props.selected || 'commits',
     }
 
@@ -47,7 +50,16 @@ export default class NewsSection extends React.Component<IProps, IState> {
     this.showNews = this.showNews.bind(this)
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+    const config = await getConfig()
+    this.setState({
+      offline: config.offline_mode || false,
+    })
+
+    // If offline, don't call news
+    if (this.state.offline) {
+      return
+    }
     // Call showNews off the bat
     this.showNews()
     this.setSelected('commits')
@@ -110,6 +122,11 @@ export default class NewsSection extends React.Component<IProps, IState> {
   }
 
   async showNews() {
+    const offline_mode = await getConfigOption('offline_mode')
+    if (offline_mode) {
+      return
+    }
+
     let news: JSX.Element | JSX.Element[] = <tr></tr>
 
     switch (this.state.selected) {
@@ -144,6 +161,10 @@ export default class NewsSection extends React.Component<IProps, IState> {
   }
 
   render() {
+    if (this.state.offline) {
+      return null
+    }
+
     return (
       <div className="NewsSection" id="newsContainer">
         <div className="NewsTabs" id="newsTabsContainer">
