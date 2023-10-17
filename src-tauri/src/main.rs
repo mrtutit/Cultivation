@@ -154,7 +154,7 @@ async fn parse_args(inp: &Vec<String>) -> Result<Args, ArgsError> {
     pathbuf.push("cultivation");
     pathbuf.push("ca");
 
-    if args.value_of("other_redirects")? {
+    if args.value_of("other-redirects")? {
       proxy::set_redirect_more();
     }
 
