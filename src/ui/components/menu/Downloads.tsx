@@ -234,8 +234,8 @@ export default class Downloads extends React.Component<IProps, IState> {
       path: folder,
     })
 
-    this.props.downloadManager.addDownload(MIGOTO_DOWNLOAD, folder + '\\GIMI-3dmigoto.zip', async () => {
-      await unzip(folder + '\\GIMI-3dmigoto.zip', folder + '\\', true)
+    this.props.downloadManager.addDownload(MIGOTO_DOWNLOAD, folder + '\\GIMI.zip', async () => {
+      await unzip(folder + '\\GIMI.zip', folder + '\\', true)
       this.toggleButtons()
     })
 
